@@ -1,0 +1,353 @@
+body {
+  background: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Avenir", sans-serif;
+  color: black;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  box-sizing: border-box;
+  height: 13vh;
+  background: rgba(255,255,255,1);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vmin;
+  box-shadow: 0px 0px 10vh 0px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 4vmin;
+  border-bottom-right-radius: 4vmin;
+}
+
+header > img, header > a > img {
+  box-sizing: border-box;
+  margin: 4vmin;
+}
+
+#logo {
+  height: 7vh;
+  cursor: pointer;
+}
+
+#hero {
+  width: 75vw;
+  box-sizing: border-box;
+  z-index: 4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 13vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4vmin;
+}
+
+#hero > h1, #name {
+  margin: 4vmin;
+  font-size: 32px;
+  line-height: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  font-family: "Neue Haas Grotesk";
+  font-weight: 800;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+#name {
+  color: black;
+  text-decoration: none;
+}
+
+#main {
+  margin-top: calc(13vh + 4vmin);
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0px 4vmin;
+  padding-bottom: 4vmin;
+  min-height: 87vh;
+}
+
+.story {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.story > div {
+  margin: 4vmin;
+}
+
+.story > .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 30vmin;
+  box-sizing: border-box;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+.story > .left > .subtitle {
+  color: black;
+  opacity: 0.3;
+  font-size: 4vmin;
+  line-height: 4vmin;
+  box-sizing: border-box;
+  height: 4vmin;
+  text-align: right;
+  margin: 0px;
+  width: 100%;
+}
+
+.story > .left > .title {
+  font-size: 6vmin;
+  font-family: "Neue Haas Grotesk";
+  font-weight: 600;
+  box-sizing: border-box;
+  line-height: 6vmin;
+  margin: 0px;
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 12vmin;
+  width: 100%;
+}
+
+.story > .left > .content {
+  color: black;
+  opacity: 0.7;
+  font-size: 4vmin;
+  line-height: 4vmin;
+  box-sizing: border-box;
+  margin: 0px;
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 8vmin;
+  width: 100%;
+  min-width: calc(84vw - 34vmin);
+}
+
+.story > .right {
+  background: #F0F0F0;
+  width: 30vmin;
+  height: 30vmin;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 4vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.story > .right > .score {
+  color: black;
+  opacity: 0.2;
+  text-align: center;
+  font-size: 13vmin;
+  font-family: "Neue Haas Grotesk";
+  font-weight: 800;
+  line-height: 13vmin;
+  height: 13vmin;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.story > .right > .score-sub {
+  color: black;
+  opacity: 0.4;
+  text-align: center;
+  font-size: 3vmin;
+  font-family: "Neue Haas Grotesk";
+  font-weight: 400;
+  line-height: 3vmin;
+  height: 3vmin;
+  margin: 0px;
+  margin-top: 3vmin;
+  box-sizing: border-box;
+}
+
+.i-score {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin: 0px 4vmin;
+  box-sizing: border-box;
+  margin-bottom: 8vmin;
+  padding-top: 4vmin;
+}
+
+.i-score > img {
+  height: 8.4vmin;
+  width: 8.4vmin;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.i-subtitle {
+  color: black;
+  opacity: 0.3;
+  margin: 0px 4vmin;
+  font-size: 6vmin;
+  line-height: 6vmin;
+  height: 6vmin;
+  box-sizing: border-box;
+  margin-bottom: 4vmin;
+}
+
+.i-title {
+  color: black;
+  margin: 0px 4vmin;
+  font-size: 12vmin;
+  line-height: 12vmin;
+  font-family: "Neue Haas Grotesk";
+  font-weight: 800;
+  box-sizing: border-box;
+  margin-bottom: 8vmin;
+}
+
+.i-content {
+  color: black;
+  margin: 0px 4vmin;
+  font-size: 6vmin;
+  line-height: 6vmin;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100vw;
+  height: 13vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background: #F0F0F0;
+}
+
+footer > p {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  opacity: 0.3;
+}
+
+#input {
+  position: fixed;
+  top: 0vh;
+  left: 0px;
+  width: 100vw;
+  z-index: 2;
+  height: 75vh;
+  background: white;
+  box-shadow: 0px 0px 10vh 0px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(-63vh);
+  transition: opacity ease 0.5s, transform ease 0.5s;
+  border-bottom-left-radius: 4vmin;
+  border-bottom-right-radius: 4vmin;
+}
+
+#input.out {
+  opacity: 1;
+  transform: translateY(0vh);
+}
+
+#whats-buzzin {
+  font-size: 5vmin;
+  height: 5vmin;
+  line-height: 5vmin;
+  box-sizing: border-box;
+  font-weight: 300;
+  opacity: 0.3;
+  color: black;
+  margin: 0px;
+  margin-bottom: 8vmin;
+}
+
+#input > input {
+  width: 84vmin;
+  outline: none;
+  border: none;
+  margin: 2vmin 0px;
+  background: #F0F0F0;
+  border-radius: 2vmin;
+  height: 8vmin;
+  padding: 2vmin 4vmin;
+  font-size: 4vmin;
+  line-height: 4vmin;
+  box-sizing: border-box;
+}
+
+#input > input::placeholder {
+  color: rgba(0,0,0,0.3);
+}
+
+#submit-row {
+  width: 84vmin;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#live-score {
+  font-size: 4vmin;
+  height: 4vmin;
+  line-height: 4vmin;
+  box-sizing: border-box;
+  font-weight: 300;
+  opacity: 0.3;
+  color: black;
+  margin: 0px;
+}
+
+#submit {
+  outline: none;
+  border: none;
+  margin: 2vmin 0px;
+  background: #fdd000;
+  border-radius: 2vmin;
+  height: 8vmin;
+  padding: 2vmin 4vmin;
+  font-size: 4vmin;
+  line-height: 4vmin;
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.3);
+  font-weight: bold;
+}
+
+#title-input {
+  margin-bottom: 0vmin !important;
+}
+
+.right.special {
+  background: #fdd000 !important;
+  box-shadow: 0px 0px 6vmin 0px rgba(253,208,0,0.3);
+}
