@@ -78,7 +78,8 @@ BUZZ.routines.score = (title, content) => {
 }
 
 BUZZ.routines.clean = (string) => {
-  return string.toString().trim().replace(/[^a-zA-Z0-9_\- ]+/g, "")
+  //return string.toString().trim().replace(/[^a-zA-Z0-9_\- ]+/g, "")
+  return string
 }
 
 BUZZ.routines.id = (string) => {
@@ -127,7 +128,7 @@ BUZZ.routines.ui = () => {
         left.onclick = () => {
           location.href = (BUZZ.ORIGIN + "/" + story.id).toString()
         }
-        if (story.score >= 50) {
+        if (story.score >= 64) {
           right.className += " special"
         }
         BUZZ.CONTAINER.appendChild(container)

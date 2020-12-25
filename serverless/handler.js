@@ -2,7 +2,6 @@
 
 const MAIN = "main"
 const ORIGIN = "https://cheezbuzz.com"
-const ORIGIN = "*"
 const TABLE = "chbz"
 const AWS = require("aws-sdk")
 const dynamodb = new AWS.DynamoDB()
