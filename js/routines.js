@@ -6,7 +6,7 @@ BUZZ.routines.init = () => {
         BUZZ.focus = active
       }
       else {
-        //location.href = BUZZ.ORIGIN
+        location.href = BUZZ.ORIGIN
       }
     }
   })
