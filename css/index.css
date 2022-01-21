@@ -298,7 +298,7 @@ footer > p {
   border: none;
   margin: 4vmin 0px;
   background: #F0F0F0;
-  border-radius: 4vmin;
+  border-radius: 5vmin;
   padding: 4vmin 6vmin;
   font-size: 4vmin;
   line-height: 4vmin;
@@ -335,8 +335,8 @@ footer > p {
   border: none;
   margin: 2vmin 0px;
   background: #fdd000;
-  border-radius: 4vmin;
-  height: 8vmin;
+  border-radius: 5vmin;
+  height: 10vmin;
   padding: 0px 8vmin;
   font-size: 4vmin;
   line-height: 4vmin;
@@ -358,4 +358,12 @@ footer > p {
 .right.special {
   background: #fdd000 !important;
   box-shadow: 0px 0px 6vmin 0px rgba(253,208,0,0.3);
+}
+
+#wedge {
+  filter: grayscale() contrast(150%);
+  width: 24vmin;
+  height: 24vmin;
+  opacity: 1;
+  margin-bottom: 12vmin;
 }
