@@ -129,7 +129,7 @@ BUZZ.routines.ui = () => {
         left.onclick = () => {
           location.href = (BUZZ.ORIGIN + "/" + story.id).toString()
         }
-        if (story.score >= 70) {
+        if (story.score >= 69) {
           right.className += " special"
         }
         BUZZ.CONTAINER.appendChild(container)
