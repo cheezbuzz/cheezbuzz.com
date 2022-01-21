@@ -260,7 +260,8 @@ footer > p {
   left: 0px;
   width: 100vw;
   z-index: 2;
-  height: 75vh;
+  height: 100vh;
+  box-sizing: border-box;
   background: white;
   box-shadow: 0px 0px 10vh 0px rgba(0,0,0,0.1);
   display: flex;
