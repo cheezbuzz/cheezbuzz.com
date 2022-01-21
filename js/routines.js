@@ -151,7 +151,7 @@ BUZZ.routines.ui = () => {
         wedge.className = "wedge"
         score.appendChild(wedge)
       }
-      score.style.width = ((story.score * 0.84).toFixed(0) + "vw")
+      score.style.width = ((story.score * 0.84).toFixed(0) + "vmin")
       const subtitle = document.createElement("p")
       subtitle.className = "i-subtitle"
       subtitle.innerHTML = time
