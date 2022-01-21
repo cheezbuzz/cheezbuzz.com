@@ -1,5 +1,5 @@
 const DEF_SCORE = (title, content) => {
-  const STR = "cheezbuzz"
+  const STR = "barackobama"
   if (!title.length || !content.length) {
     return 0
   }

@@ -6,7 +6,7 @@ BUZZ.routines.init = () => {
         BUZZ.focus = active
       }
       else {
-        location.href = BUZZ.ORIGIN
+        //location.href = BUZZ.ORIGIN
       }
     }
   })
@@ -91,6 +91,7 @@ BUZZ.routines.id = (string) => {
 }
 
 BUZZ.routines.ui = () => {
+  $("#year")[0].innerHTML = BUZZ.YEAR.toString()
   if (BUZZ.LOADED) {
     BUZZ.CONTAINER.innerHTML = ""
     if (BUZZ.focus === null) {

@@ -265,7 +265,8 @@ footer > p {
   box-shadow: 0px 0px 10vh 0px rgba(0,0,0,0.1);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-bottom: 20px;
   flex-direction: column;
   opacity: 0;
   transform: translateY(-63vh);
@@ -291,21 +292,22 @@ footer > p {
   margin-bottom: 8vmin;
 }
 
-#input > input {
+#input > input, #input > textarea {
   width: 84vmin;
   outline: none;
   border: none;
-  margin: 2vmin 0px;
+  margin: 4vmin 0px;
   background: #F0F0F0;
-  border-radius: 2vmin;
-  height: 8vmin;
-  padding: 2vmin 4vmin;
+  border-radius: 4vmin;
+  padding: 4vmin 6vmin;
   font-size: 4vmin;
   line-height: 4vmin;
   box-sizing: border-box;
+  font-family: "Avenir", sans-serif;
+  resize: none;
 }
 
-#input > input::placeholder {
+#input > input::placeholder, #input > textarea::placeholder {
   color: rgba(0,0,0,0.3);
 }
 
@@ -333,9 +335,9 @@ footer > p {
   border: none;
   margin: 2vmin 0px;
   background: #fdd000;
-  border-radius: 2vmin;
+  border-radius: 4vmin;
   height: 8vmin;
-  padding: 2vmin 4vmin;
+  padding: 0px 8vmin;
   font-size: 4vmin;
   line-height: 4vmin;
   box-sizing: border-box;
@@ -344,7 +346,13 @@ footer > p {
 }
 
 #title-input {
-  margin-bottom: 0vmin !important;
+  margin-bottom: 2vmin !important;
+}
+
+#content-input {
+  min-height: 120px !important;
+  max-height: 200px;
+  resize: vertical !important;
 }
 
 .right.special {

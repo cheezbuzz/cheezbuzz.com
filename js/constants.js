@@ -5,6 +5,7 @@ const BUZZ = {
   LOADED: false,
   TITLE_MAX_LENGTH: 32,
   CONTENT_MAX_LENGTH: 999,
+  YEAR: (new Date()).getFullYear(),
   state: {
     stories: [],
     ids: []
